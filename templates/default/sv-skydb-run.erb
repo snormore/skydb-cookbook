@@ -1,0 +1,5 @@
+#!/bin/sh
+exec 2>&1
+
+ulimit -n <%= node[:skydb][:ulimit] %>
+exec chpst -u <%= node[:skydb][:user] %> skyd -data-path="<%= node[:skydb][:data_path] %>" -p <%= node[:skydb][:port] %>

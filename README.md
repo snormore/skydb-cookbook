@@ -1,4 +1,3 @@
-skydb-cookbook
-==============
+# Description
 
-A chef cookbook for skydb
+Installs skydb https://github.com/skydb/sky
